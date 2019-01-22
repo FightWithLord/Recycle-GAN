@@ -6,6 +6,7 @@ from PIL import Image
 import PIL
 import random
 
+
 class UnalignedDataset(BaseDataset):
     def initialize(self, opt):
         self.opt = opt

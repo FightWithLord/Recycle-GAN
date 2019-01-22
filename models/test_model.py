@@ -10,7 +10,7 @@ class TestModel(BaseModel):
         return 'TestModel'
 
     def initialize(self, opt):
-        assert(not opt.isTrain)
+        assert (not opt.isTrain)
         BaseModel.initialize(self, opt)
         self.input_A = self.Tensor(opt.batchSize, opt.input_nc, opt.fineSize, opt.fineSize)
 
